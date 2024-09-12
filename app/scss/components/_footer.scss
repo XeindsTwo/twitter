@@ -1,10 +1,18 @@
 .footer {
+  margin-bottom: 30px;
+
   &__list {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 18px;
     flex-wrap: wrap;
+    @media (max-width: 1100px) {
+      gap: 22px;
+    }
+    @include r($phone) {
+      gap: 18px;
+    }
   }
 
   &__link {
@@ -13,6 +21,12 @@
     border-bottom: 1px solid transparent;
     padding-bottom: 1px;
     transition: color .4s, border .4s;
+    @include r($desktop) {
+      font-size: 18px;
+    }
+    @include r($sm) {
+      font-size: 16px;
+    }
 
     &.non {
       pointer-events: none;

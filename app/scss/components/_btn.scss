@@ -15,15 +15,18 @@
     font-size: 22px;
   }
   @include r($lg) {
+    padding: 16px;
     font-size: 20px;
   }
   @include r($tablet) {
-    padding: 16px;
+    padding: 14px;
   }
   @include r($sm) {
     font-size: 18px;
+    gap: 9px;
   }
   @include r($phone) {
+    padding: 11px;
     font-size: 16px;
   }
 
@@ -44,6 +47,16 @@
       background-color: #ffde70;
       color: $black100;
     }
+
+    svg {
+      @include r($sm) {
+        height: auto;
+        width: 29px;
+      }
+      @include r($phone) {
+        width: 26px;
+      }
+    }
   }
 
   &.apple {
@@ -60,6 +73,16 @@
 
       svg path {
         fill: $white;
+      }
+    }
+
+    svg {
+      @include r($sm) {
+        height: auto;
+        width: 29px;
+      }
+      @include r($phone) {
+        height: 26px;
       }
     }
   }

@@ -9,6 +9,9 @@
     @include r($tablet) {
       gap: 18px;
     }
+    @include r($phone) {
+      gap: 14px;
+    }
   }
 
   &__buttons {
