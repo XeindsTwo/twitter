@@ -1,0 +1,18 @@
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 48px 0;
+  @media (max-width: 1100px) {
+    font-size: 32px;
+    margin: 40px 0;
+  }
+  @include r($tablet) {
+    font-size: 30px;
+  }
+  @include r($sm) {
+    font-size: 28px;
+  }
+  @include r($phone) {
+    font-size: 26px;
+  }
+}

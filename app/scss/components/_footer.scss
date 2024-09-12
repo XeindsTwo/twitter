@@ -1,0 +1,30 @@
+.footer {
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+
+  &__link {
+    font-size: 20px;
+    color: rgba($white, .4);
+    border-bottom: 1px solid transparent;
+    padding-bottom: 1px;
+    transition: color .4s, border .4s;
+
+    &.non {
+      pointer-events: none;
+    }
+
+    &:hover {
+      color: $white;
+    }
+
+    &:focus {
+      color: $accent;
+      border-bottom-color: $accent;
+    }
+  }
+}
